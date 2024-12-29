@@ -1,18 +1,19 @@
-# Prerequisite
-## Environment
+[English](doc/README.md)
+# 先决条件
+## 环境
 c++17
-## Use
-TODO: use opencl parallel calculation and eigen matrix library
+## 使用
+TODO: 使用opencl并行计算和eigen矩阵计算库
 ## Test && Example
 1. SDL2
 2. dear-imgui
 3. gtest
-# How to Start
-1. Copy `imgui` header files into `3rdparty/imgui/*`
-2. install SDL2 and gtest
+# 如何开始
+1. 把`imgui`头文件复制到`3rdparty/imgui/*`
+2. 安装SDL2和gtest（需要有.cmake文件）
 3. `cmake -B build` && `cmake --build build`
-# What is Circular Harmonics Function
-Circular harmonics(CH) function is cosine harmonic function in polar coordinate, common form show like:
+# 什么是圆谐函数
+圆谐函数（circular harmonics function, CH）是正弦谐波函数在极坐标下的表现形式，具体形式如下：
 ```
 ρ = b + w_0 * cosθ  + w_1 * sinθ
       + w_2 * cos2θ + w_3 * sin2θ
@@ -20,6 +21,5 @@ Circular harmonics(CH) function is cosine harmonic function in polar coordinate,
       + ...
       + w_{2n-2} * cos(nθ) + w_{2n-1} * sin(nθ)
 ```
-where ρ and θ means radial and angular namely in polar coordinate, b means DC component and w_0 - w_n means weights of harmonics bands.
-
-Despite that harmonics function often used in physics and signal processing, this project mainly focus on its geometric features and try to use CH to build a 2d phisic simulation system. 
+其中ρ和θ是极径和极角，b是直流分量，w_0 - w_n是高次谐波分量。
+调和函数（harmonics function）在物理学和信号处理中应用广泛，但本项目着眼于其几何特性并致力于使用CH构建二维物理模拟系统。
