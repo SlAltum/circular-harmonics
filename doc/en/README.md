@@ -22,4 +22,6 @@ Circular harmonics(CH) function is cosine harmonic function in polar coordinate,
 ```
 where ρ and θ means radial and angular namely in polar coordinate, b means DC component and w_0 - w_n means weights of harmonics bands.
 
-Despite that harmonics function often used in physics and signal processing, this project mainly focus on its geometric features and try to use CH to build a 2d phisic simulation system. 
+Despite that harmonics function often used in physics and signal processing, this project mainly focus on its geometric features and try to use CH to build a 2d phisic simulation system.
+# Algorithms
+[algorithm](algorithm.md)

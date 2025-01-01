@@ -128,7 +128,7 @@ void FrameProcessCH(SDL_Renderer* renderer, SDLCircHarm &ch1, SDLCircHarm &ch2) 
         if (_dy<0) r1Rad = -r1Rad;
         rho1 = ch2.GetRho(r1Rad);
         distProj = rho0 * cos(offsetRad) + rho1 * cos(r1Rad - rad - M_PI);
-        if (distProj <= lastDistProj || gradient == 0) break;
+        if (distProj <= lastDistProj || (-dRad < gradient && gradient < dRad)) break;
     }
     if (norm > lastDistProj) {
         return;

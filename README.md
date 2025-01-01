@@ -1,4 +1,4 @@
-[English](doc/README.md)
+[English](doc/en/README.md)
 # 先决条件
 ## 环境
 c++17
@@ -23,3 +23,5 @@ TODO: 使用opencl并行计算和eigen矩阵计算库
 ```
 其中ρ和θ是极径和极角，b是直流分量，w_0 - w_n是高次谐波分量。
 调和函数（harmonics function）在物理学和信号处理中应用广泛，但本项目着眼于其几何特性并致力于使用CH构建二维物理模拟系统。
+# 算法描述
+[算法](doc/algorithm.md)
